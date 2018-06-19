@@ -1,0 +1,541 @@
+/* ===== == = === Base Styles === = == ===== */
+
+body {
+	font-family: 'Raleway';
+}
+
+.hr_scores {
+	border-color: #026838;
+	text-shadow: none;
+	border-width: 0.3px;
+
+}
+
+.panel-footer-not-logged {
+	display: none;
+}
+
+#googlemap {
+	height: 400px;
+	width: 100%;
+}
+
+.font500 {
+	font-family: 'Raleway';
+	font-weight: 500 !important;
+}
+
+#location_name_top {
+	margin: 3px;
+}
+
+.location_adress {
+	margin: 4px;
+}
+
+#location_info {
+	border: none;
+}
+
+#location_map {
+	margin-top: 15px;
+
+}
+
+/*
+#firechat-wrapper {
+	height: 300px;
+	max-width: 100%;
+	padding: 18px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	margin: 0 auto;
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 5px 25px #666;
+	-moz-box-shadow: 0 5px 25px #666;
+	box-shadow: 0 5px 25px #666;
+	text-shadow: none;
+}
+*/
+
+.media-list {
+	padding-left: 0;
+	list-style: none;
+	height: 300px;
+}
+
+
+.main_logo {
+	display: block;
+	margin: 0 auto 10px;
+	width: 40%;
+}
+
+.team_logo {
+	display: block;
+	margin: 0 auto 10px;
+	width: 40%;
+}
+
+.team_logo_schedule {
+	display: block;
+	margin: 0 auto 10px;
+	width: 30%;
+}
+
+#team_description {
+	border: none;
+	border-radius: 10px;
+}
+
+.game_info_team_logo {
+	display: block;
+	margin: 0 auto 10px;
+	width: 25%;
+}
+
+.centered_text {
+	text-align: center;
+}
+
+.custom-corners .ui-body {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: .3125em;
+	border-bottom-right-radius: .3125em;
+}
+
+.custom-corners .ui-bar {
+	border-top-left-radius: .3125em;
+	border-top-right-radius: .3125em;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.button-wrap {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.team_list img {
+	width: 30%;
+}
+
+.game_list img {
+	width: 30%;
+	vertical-align: -webkit-baseline-middle;
+}
+
+#game_info img {
+	width: 30%;
+}
+
+.game_list {
+	text-align: center;
+}
+
+.versus {}
+
+#game_date,
+#game_time {
+	font-size: 1.2em;
+}
+
+.score_item {
+	margin: 6px;
+}
+
+.score_result {
+	margin: 1px;
+	font-size: 1.3em;
+	font-weight: 700;
+	color: #026838;
+}
+
+.score_team_name {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.score_date {
+	font-size: 0.7em;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.divTxtL {
+	text-align: left;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+	border-radius: 5px;
+	overflow: hidden;
+	color: #000;
+	text-shadow: none;
+
+}
+
+.divTxtR {
+	text-align: right;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	padding-right: 5px !important;
+	padding-left: 5px !important;
+	border-radius: 5px;
+	overflow: hidden;
+	color: #000;
+	text-shadow: none;
+}
+
+.chat_message {
+	font-size: 1.2em;
+}
+
+
+.panel-body {
+	height: 480px;
+	padding: 15px;
+	overflow: scroll;
+}
+
+.footer_chat {
+	background-color: #eee;
+}
+
+.border_none {
+	border: none;
+}
+
+.panel-info {
+	border-color: #bce8f1;
+}
+
+
+.pull-right {
+	float: right !important;
+}
+
+.pull-left {
+	float: left !important;
+}
+
+.img-circle {
+	border-radius: 50%;
+	width: 30px;
+}
+
+.media-body {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.media-object {
+	display: block;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.text-muted {
+	color: #000;
+	text-shadow: none;
+	font-size: 0.7em;
+}
+
+#btnSend {
+	margin: 0;
+
+}
+
+.pinknomargin {
+	margin: 0;
+	background-color: deeppink !important;
+}
+
+.noregisteredmsg {
+	margin: 0;
+}
+
+
+/* ===== == = === 22.5em (360px) === = == ===== */
+
+@media all and (min-width: 22.5em) {}
+
+@media all and (min-width: 22.5em) and (orientation: landscape) {
+	.main_logo {
+		width: 20%;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		width: 49%;
+	}
+
+	.panel-body {
+		height: 200px;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+}
+
+
+/*IPHONE 6, 7, 8 PORTRAIT*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+
+	.panel-body {
+		height: 510px;
+	}
+}
+
+/*IPHONE 6, 7, 8 LANDSCAPE*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: landscape) {
+
+	.panel-body {
+		height: 220px;
+	}
+}
+
+/*iPhone 6, 7, & 8 Plus in portrait*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+	.panel-body {
+		height: 570px;
+	}
+}
+
+/*iPhone 6, 7, & 8 Plus in landscape*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: landscape) {
+	.panel-body {
+		height: 250px;
+	}
+}
+
+/*iPhone X in portrait*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+	.panel-body {
+		height: 645px;
+	}
+}
+
+/*iPhone X in landscape*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+	.panel-body {
+		height: 220px;
+	}
+}
+
+/*iPad in portrait*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+	.main_logo {
+		width: 30%;
+		padding: 20px;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		padding: 6px;
+		width: 48%;
+	}
+
+	.team_list img {
+		width: 70%;
+	}
+
+	.panel-body {
+    height: 860px;
+    width: 90%;
+    margin: 0 auto;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+
+	#game_info img {
+		width: 70%;
+	}
+}
+
+/*iPad in landscape*/
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+	.main_logo {
+		width: 20%;
+		padding: 20px;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		padding: 6px;
+		width: 48%;
+	}
+
+	.team_list img {
+		width: 50%;
+	}
+	.team_logo {
+		width: 25%;
+	}
+
+.panel-body {
+    height: 610px;
+    width: 90%;
+    margin: 0 auto;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+
+	#game_info img {
+		width: 70%;
+	}
+
+	.vs {
+		text-align: center;
+		display: inline-grid;
+		padding: 20;
+		font-size: 1.3em;
+	}
+}
+
+/*iPad PRO in portrait*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+	.main_logo {
+		width: 30%;
+		padding: 20px;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		padding: 6px;
+		width: 48%;
+	}
+
+	.team_list img {
+		width: 70%;
+	}
+
+	.panel-body {
+    height: 1200px;
+    width: 90%;
+    margin: 0 auto;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+
+	#game_info img {
+		width: 75%;
+	}
+	.vs {
+		text-align: center;
+		display: inline-grid;
+		padding: 20;
+		font-size: 1.3em;
+	}
+}
+
+/*iPad in landscape*/
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: landscape) {
+	.main_logo {
+		width: 20%;
+		padding: 20px;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		padding: 6px;
+		width: 48%;
+	}
+
+	.team_list img {
+		width: 50%;
+	}
+	.team_logo {
+		width: 25%;
+	}
+
+.panel-body {
+    height: 860px;
+    width: 90%;
+    margin: 0 auto;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+
+	#game_info img {
+		width: 70%;
+	}
+
+	.vs {
+		text-align: center;
+		display: inline-grid;
+		padding: 20;
+		font-size: 1.3em;
+	}
+}
+
+@media only screen and (min-device-width: 1367px) {
+	.main_logo {
+		width: 20%;
+		padding: 20px;
+	}
+	.lastScoresHome,
+	.upcomingHome {
+		display: inline-grid;
+		padding: 6px;
+		width: 48%;
+	}
+
+	.team_list img {
+		width: 50%;
+	}
+	.team_logo {
+		width: 25%;
+	}
+
+.panel-body {
+    height: 860px;
+    width: 90%;
+    margin: 0 auto;
+	}
+
+	.team_item {
+		width: 33%;
+		display: inline-grid;
+	}
+
+	#game_info img {
+		width: 70%;
+	}
+
+	.vs {
+		text-align: center;
+		display: inline-grid;
+		padding: 20;
+		font-size: 1.3em;
+	}
+}
+
