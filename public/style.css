@@ -137,6 +137,10 @@ body {
 	text-align: center;
 }
 
+.game_list_item_back {
+	background-color: #669429;
+}
+
 .versus {}
 
 #game_date,
@@ -354,9 +358,9 @@ body {
 	}
 
 	.panel-body {
-    height: 860px;
-    width: 90%;
-    margin: 0 auto;
+		height: 860px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.team_item {
@@ -390,10 +394,10 @@ body {
 		width: 25%;
 	}
 
-.panel-body {
-    height: 610px;
-    width: 90%;
-    margin: 0 auto;
+	.panel-body {
+		height: 610px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.team_item {
@@ -432,9 +436,9 @@ body {
 	}
 
 	.panel-body {
-    height: 1200px;
-    width: 90%;
-    margin: 0 auto;
+		height: 1200px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.team_item {
@@ -474,10 +478,10 @@ body {
 		width: 25%;
 	}
 
-.panel-body {
-    height: 860px;
-    width: 90%;
-    margin: 0 auto;
+	.panel-body {
+		height: 860px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.team_item {
@@ -516,10 +520,10 @@ body {
 		width: 25%;
 	}
 
-.panel-body {
-    height: 860px;
-    width: 90%;
-    margin: 0 auto;
+	.panel-body {
+		height: 860px;
+		width: 90%;
+		margin: 0 auto;
 	}
 
 	.team_item {
@@ -539,3 +543,10 @@ body {
 	}
 }
 
+.dateTimeSmall {
+	font-size: 0.8em;
+}
+
+.logoTeamSmall {
+	width: 30%;
+}

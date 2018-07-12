@@ -169,7 +169,7 @@ function matchesList() {
 
 		if (matchesArray[i].date > today) {
 
-			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'>" + teamsArray[matchesArray[i].local_team_id].team_name + "<br>vs.<br>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br>Date: " + dayName + " " + output_date + " Time: " + output_time + "</a></div>";
+			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500 game_list_item_back' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].local_team_id].team_logo + "'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].visitor_team_id].team_logo + "'><br>" + teamsArray[matchesArray[i].local_team_id].team_name + "<span class='dateTimeSmall'> vs. </span>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br><span class='dateTimeSmall'>" + dayName + " " + output_date + " Time: " + output_time + "</span></a></div>";
 			$('.games_list').append(match_item_Html);
 		}
 	}
@@ -310,7 +310,7 @@ function getUpcomingMatchesHome() {
 		var output_time = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 		if (matchesArray[i].date > today) {
 
-			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-mini ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'>" + teamsArray[matchesArray[i].local_team_id].team_name + "<br>vs.<br>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br>" + "Date: " + dayName + " " + output_date + " Time: " + output_time + "</a></div>";
+			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500 game_list_item_back' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].local_team_id].team_logo + "'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].visitor_team_id].team_logo + "'><br>" + teamsArray[matchesArray[i].local_team_id].team_name + "<span class='dateTimeSmall'> vs. </span>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br><span class='dateTimeSmall'>" + dayName + " " + output_date + " Time: " + output_time + "</span></a></div>";
 			$('#upcoming_matches').append(match_item_Html);
 			upcomingCounter++;
 		}
@@ -349,7 +349,7 @@ function getNextMatch(data_teamId) {
 
 		if (((data_teamId == matchesArray[i].local_team_id) || (data_teamId == matchesArray[i].visitor_team_id)) && (matchesArray[i].date > today)) {
 			next_match_count++;
-			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'>" + teamsArray[matchesArray[i].local_team_id].team_name + "<br>vs.<br>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br>" + "Date: " + dayName + " " + output_date + " Time: " + output_time + "</a></div>";
+			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500 game_list_item_back' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].local_team_id].team_logo + "'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].visitor_team_id].team_logo + "'><br>" + teamsArray[matchesArray[i].local_team_id].team_name + "<span class='dateTimeSmall'> vs. </span>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br><span class='dateTimeSmall'>" + dayName + " " + output_date + " Time: " + output_time + "</span></a></div>";
 		}
 	}
 	if (match_item_Html === "") {
@@ -380,7 +380,7 @@ function getTeamSchedule(data_teamId) {
 
 		if (((data_teamId == matchesArray[i].local_team_id) || (data_teamId == matchesArray[i].visitor_team_id)) && (matchesArray[i].date > today)) {
 
-			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'>" + teamsArray[matchesArray[i].local_team_id].team_name + "<br>vs.<br>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br>" + "Date: " + dayName + " " + output_date + " Time: " + output_time + "</a></div>";
+			match_item_Html = "<div class='game_list_item'><a href = '#gamepage' class='ui-btn ui-corner-all ui-shadow ui-btn-icon-left ui-icon-info font500 game_list_item_back' data_game_id='" + matchesArray[i].match_id + "' onclick='return gamePage(" + matchesArray[i].match_id + ");'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].local_team_id].team_logo + "'><img class='logoTeamSmall' src='" + teamsArray[matchesArray[i].visitor_team_id].team_logo + "'><br>" + teamsArray[matchesArray[i].local_team_id].team_name + "<span class='dateTimeSmall'> vs. </span>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "<br><span class='dateTimeSmall'>" + dayName + " " + output_date + " Time: " + output_time + "</span></a></div>";
 			teamScheduleHtml = teamScheduleHtml + match_item_Html;
 		}
 	}
@@ -394,7 +394,6 @@ function getTeamSchedule(data_teamId) {
 	//		gamePage(game_id);
 	//	});
 }
-
 
 
 //CODE TO DELETE USERS IN FIREBASE FROM DEVELOPERS CONSOLE
