@@ -199,7 +199,7 @@ function scoresList() {
 
 		if (match_datetime < today) {
 
-			match_score_item_Html = "<div class='score_item centered_text' id='" + matchesArray[i].match_id + "'><p class='score_team_name'>" + teamsArray[matchesArray[i].local_team_id].team_name + " " + matchesArray[i].local_team_score + " - " + matchesArray[i].visitor_team_score + " " + teamsArray[matchesArray[i].visitor_team_id].team_name + "</p><p class='score_date'>Date: " + output_date + "</p></div><hr class='hr_scores'>";
+			match_score_item_Html = "<div class='score_item centered_text' id='" + matchesArray[i].match_id + "'><p class='score_team_name'>" + teamsArray[matchesArray[i].local_team_id].team_name + " <span class='smallScore'>" + matchesArray[i].local_team_score + " - " + matchesArray[i].visitor_team_score + " </span> " + teamsArray[matchesArray[i].visitor_team_id].team_name + "</p><p class='score_date'>Date: " + output_date + "</p></div><hr class='hr_scores'>";
 			$('.scores_list').append(match_score_item_Html);
 			scoresCount++;
 			if (scoresCount <= 2) {
@@ -232,8 +232,11 @@ function getLastScores(data_teamId) {
 		var output_time = (hours < 10 ? '0' : '') + hours + ':' + (minutes < 10 ? '0' : '') + minutes;
 
 		if (((data_teamId == matchesArray[i].local_team_id) || (data_teamId == matchesArray[i].visitor_team_id)) && (match_datetime < today)) {
+			
+			match_score_item_Html = "<div class='score_item centered_text' id='" + matchesArray[i].match_id + "'><p class='score_team_name'>" + teamsArray[matchesArray[i].local_team_id].team_name + " <span class='smallScore'>" + matchesArray[i].local_team_score + " - " + matchesArray[i].visitor_team_score + " </span> " + teamsArray[matchesArray[i].visitor_team_id].team_name + "</p><p class='score_date'>Date: " + output_date + "</p></div><hr class='hr_scores'>";
+			$('.scores_list').append(match_score_item_Html);
 
-			match_score_item_Html = "<div class='score_item centered_text' id='" + matchesArray[i].match_id + "'><p class='score_team_name'>" + teamsArray[matchesArray[i].local_team_id].team_name + "</p><p  class='score_result'>" + matchesArray[i].local_team_score + " - " + matchesArray[i].visitor_team_score + "</p><p class='score_team_name'>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "</p><p class='score_date'>Date: " + output_date + "</p></div><hr class='hr_scores'>";
+			/*match_score_item_Html = "<div class='score_item centered_text' id='" + matchesArray[i].match_id + "'><p class='score_team_name'>" + teamsArray[matchesArray[i].local_team_id].team_name + "</p><p  class='score_result'>" + matchesArray[i].local_team_score + " - " + matchesArray[i].visitor_team_score + "</p><p class='score_team_name'>" + teamsArray[matchesArray[i].visitor_team_id].team_name + "</p><p class='score_date'>Date: " + output_date + "</p></div><hr class='hr_scores'>";*/
 			scoresCount++;
 			if (scoresCount <= 2) {
 				$('#team_last_scores').append(match_score_item_Html);

@@ -89,6 +89,8 @@ body {
 #team_description {
 	border: none;
 	border-radius: 10px;
+	background-color: #d2dac9;
+	text-shadow: none;
 }
 
 .game_info_team_logo {
@@ -635,10 +637,20 @@ html .ui-bar-a .ui-bar-inherit,
 html .ui-body-a .ui-bar-inherit,
 html body .ui-group-theme-a .ui-bar-inherit {
 	border-radius: 3px;
-	background-color: #929292;
+	background-color: #5c6157;
 	border: none;
 }
 
 .chat_message img {
 	width: 50px;
+}
+
+.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+    background-color: #909e7f;
+    border-color: #909e7f;
+}
+
+.smallScore {
+	    font-weight: bold;
+    color: #006837;
 }
