@@ -198,7 +198,9 @@ body {
 }
 
 .chat_message {
-	font-size: 1.2em;
+	font-size: 1.1em;
+    word-break: break-word;
+}
 }
 
 
